@@ -94,9 +94,10 @@ body {
     align-items: center;
 }
 
-.hero-image .img {
-    max-width: 100%;
-    height: auto;
+.hero-image img {
+    height: 198px;
+    width: 480px;
+    object-fit: cover;
 }
 
 .information {
@@ -130,12 +131,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px
+    gap: 10px;
 }
 
 .card img {
-    max-width: 100%;
-    height: auto;
+    max-width: 200px;
+    height: 100%;
     border: 2px solid #3882f6;
     border-radius: 8px;
+}
+
+.quote {
+    flex: 1;
+    background-color: #e5e7eb;
 }
