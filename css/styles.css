@@ -76,12 +76,11 @@ body {
 }
 
 .hero-text-button button {
-    width: 70px;
-    height: 26px;
+    width: 90px;
+    height: 30px;
     color: #f9faf8;
     background-color: #3882f6;
     text-align: center;
-    border: none;
     border-radius: 12px;
 }
 
@@ -162,4 +161,50 @@ body {
     align-self: flex-end;
     font-size: 18px;
     font-weight: 800;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.call-container {
+    flex: 1;
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.call-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.call-headline {
+    font-size: 24px;
+    font-weight: 800;
+    color: #f9faf8;
+}
+
+.call-support {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.call-container button {
+    width: 90px;
+    height: 30px;
+    color: #f9faf8;
+    background-color: #3882f6;
+    text-align: center;
+    border-radius: 12px;
+    border-color: white;
 }
