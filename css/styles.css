@@ -14,7 +14,7 @@ body {
     background-color: #1f2937;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px; /* this will apply to other sections too */
+    padding: 0 50px; 
 }
 
 .logo {
@@ -28,17 +28,63 @@ body {
     gap: 15px;
 }
 
-ul {
+.header ul {
     list-style-type: none;
 }
 
-li {
+.header ul li {
     flex-shrink: 0;
 }
 
-a {
+.header-links a {
     text-decoration: none;
     font-size: 18px;
     color: #e5e7eb;
 }
 
+.hero {
+    display: flex;
+    background-color: #1f2937;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px;
+    gap: 20px;
+}
+
+.hero-text-button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 480px;
+}
+
+.hero-main-text {
+    font-size: 48px;
+    font-weight: 800;
+    color: #f9faf8;
+}
+
+.hero-secondary-text {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.hero-text-button button {
+    width: 70px;
+    height: 26px;
+    color: #f9faf8;
+    background-color: #3882f6;
+    text-align: center;
+    border: none;
+    border-radius: 12px;
+}
+
+.hero-image {
+    flex-shrink: 0;
+    height: 198px;
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
