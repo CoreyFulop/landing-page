@@ -3,7 +3,7 @@
 body {
     height: 100vh;
     margin: 0px;
-    overflow: hidden;
+    overflow: auto;
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
@@ -11,16 +11,19 @@ body {
 
 .header {
     display: flex;
+    flex-wrap: wrap;
     background-color: #1f2937;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px; 
+    padding: 10px 50px 0px 50px; 
+    gap: 10px;
 }
 
 .logo {
     font-size: 24px;
     color: #f9faf8;
     flex-shrink: 0;
+    margin-right: 20px;
 }
 
 .header-links {
@@ -29,6 +32,7 @@ body {
 }
 
 .header ul {
+    padding: 0px;
     list-style-type: none;
 }
 
@@ -43,6 +47,7 @@ body {
 }
 
 .hero {
+    flex: 1;
     display: flex;
     background-color: #1f2937;
     flex-wrap: wrap;
@@ -87,4 +92,50 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hero-image .img {
+    max-width: 100%;
+    height: auto;
+}
+
+.information {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px;
+    gap: 20px;
+}
+
+.information-header {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #3882f6;
+    border-radius: 8px;
 }
